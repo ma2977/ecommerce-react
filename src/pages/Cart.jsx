@@ -12,8 +12,6 @@ const Cart = () => {
 	},[])
 
   const {cartGlobal} = useSelector(state => state)
-  //console.log(cartGlobal)
-
   const totalPriceCart = cartGlobal?.reduce((acc, cv) => acc + cv.quantity * cv.product.price ,0)
   console.log( `totalPriceCart: ${totalPriceCart}`)
 

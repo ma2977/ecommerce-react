@@ -8,14 +8,12 @@ const Home = () => {
 
   const { productsGlobal } = useSelector(state => state)
 
-  //console.log(productsGlobal)
   const [inputValue, setInputValue] = useState('')
   const input = useRef()
 
   const hangleChangeInput = () =>{
     setInputValue(input.current.value.toLowerCase().trim())
   }
-  //console.log(inputValue)
 
   const productFilter = productsGlobal?.filter(prod => prod.title.toLowerCase().includes(inputValue))
 

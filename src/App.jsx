@@ -11,9 +11,6 @@ import Login from './pages/Login'
 import Cart from './pages/Cart'
 import Purchases from './pages/Purchases'
 
-
-
-
 function App() {
   
   const dispatch = useDispatch()
@@ -21,7 +18,6 @@ function App() {
   useEffect(() => {
    dispatch(getAllProductsThunk())
   }, [])
-
     
   return (
     
